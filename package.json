@@ -1,0 +1,94 @@
+{
+  "name": "@0xdhrv/style-guide",
+  "version": "1.0.0",
+  "description": "minimal style guide for web development",
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "prettier-config",
+    "prettier",
+    "style-guide",
+    "tsconfig"
+  ],
+  "homepage": "https://github.com/0xdhrv/style-guide",
+  "bugs": "https://github.com/0xdhrv/style-guide/issues",
+  "repository": "https://github.com/0xdhrv/style-guide",
+  "license": "MIT",
+  "author": "Dhruv Suthar <hi@dhrv.pw>",
+  "sideEffects": false,
+  "files": [
+    "eslint/**/*.js",
+    "prettier/**/*.js",
+    "tsconfig/*.json",
+    "*.json"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --fix \"**/*.js\""
+  },
+  "prettier": "./prettier",
+  "eslintConfig": {
+    "extends": "./eslint/config-authoring",
+    "root": true
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prefer-arrow-functions": "^3.1.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier-plugin-packagejson": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.21.0",
+    "@types/node": "^18.11.19",
+    "@types/prettier": "^2.7.2",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=8",
+    "prettier": ">=2",
+    "tailwindcss": ">=3",
+    "typescript": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    },
+    "tailwindcss": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "optionalDependencies": {
+    "@next/eslint-plugin-next": "^13.1.6",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-playwright": "^0.12.0",
+    "eslint-plugin-tailwindcss": "^3.8.3",
+    "eslint-plugin-testing-library": "^5.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
