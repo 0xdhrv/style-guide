@@ -1,6 +1,6 @@
 {
   "name": "@0xdhrv/style-guide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "minimal style guide for web development",
   "keywords": [
     "eslint-config",
